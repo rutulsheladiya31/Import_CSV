@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.error {
+    color: red;
+    margin-top: 5px;
+}
+
+.gallery .previmage {
+    margin-top: 30px;
+}
+
+.gallery>img {
+    width: 150px;
+    height: 150px;
+    padding: 10px;
+}
+
+.image-preview img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#cancleImage {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    font-size: 16px;
+    color: white;
+    border: none;
+    border-radius: 100%;
+    background-color: black;
+    width: 22px;
+    height: 22px;
+}
+
+.table-img {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+#gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.image-container {
+    position: relative;
+    margin: 10px;
+}
+
+.image-container>img {
+    width: 150px;
+    height: 150px;
+    padding: 10px;
+}
+
+.crossIcon{
+    position: absolute;
+    top: 0;
+    right: 5px;
+    color: white;
+    background: black;
+    border-radius: 50%;
+    width: 19px;
+    text-align: center;
+    height: 21px;
+}
