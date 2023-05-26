@@ -32,6 +32,14 @@ session_start();
          </div>';
          unset($_SESSION['success']);
         }
+
+        if (isset($_SESSION['error'])) {
+            echo '<div class="alert alert-danger alert-dismissible fade show mt-5" role="alert">
+            <strong>'.$_SESSION['error'].'</strong>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>';
+          unset($_SESSION['error']);
+         }
         ?>
 
 
