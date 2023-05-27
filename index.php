@@ -26,24 +26,21 @@ session_start();
         </form>
         <?php
         if (isset($_SESSION['success'])) {
-           echo '<div class="alert alert-success alert-dismissible fade show mt-5" role="alert">
-           <strong>'.$_SESSION['success'].'</strong>
+            echo '<div class="alert alert-success alert-dismissible fade show mt-5" role="alert">
+           <strong>' . $_SESSION['success'] . '</strong>
            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
          </div>';
-         unset($_SESSION['success']);
+            unset($_SESSION['success']);
         }
 
         if (isset($_SESSION['error'])) {
             echo '<div class="alert alert-danger alert-dismissible fade show mt-5" role="alert">
-            <strong>'.$_SESSION['error'].'</strong>
+            <strong>' . $_SESSION['error'] . '</strong>
             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
           </div>';
-          unset($_SESSION['error']);
-         }
+            unset($_SESSION['error']);
+        }
         ?>
-
-
-
     </section>
 
     <script src="js/bootstrap.bundle.min.js"></script>
